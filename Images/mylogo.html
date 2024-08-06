@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+     .list-group-item{
+        margin-top: 50px;
+        border: none;
+        background-color: #f5f5f5;
+        text-transform: uppercase;
+        margin-left: 40px;
+        height: 45px;
+        padding: 15px 20px;
+        border-bottom: 2px solid rgba(220, 15, 73, 1);
+       }
+       .list-group-item:hover{
+        box-sizing: border-box;
+        padding: 15px 20px;
+        background-color: rgba(220, 15, 73, 1);
+       }
+       #all{
+        background-color: rgba(220, 15, 73, 1);
+        border-bottom: none;
+       }
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MYLOGO.COM</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+
+<div id="myBtnContainer">
+    <div>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item" onclick="filterSelection('all')" id="all">All</li>
+            <li class="list-group-item" onclick="filterSelection('nature')">HTML & CSS</li>
+            <li class="list-group-item" onclick="filterSelection('cars')">Bootstrap</li>
+            <li class="list-group-item" onclick="filterSelection('people')">Bootstrap & Javascript Projects</li>
+        </ul>
+    </div>
+  <!-- <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button> -->
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 nature">
+                <img src="./Images/beach1.jpeg" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+
+            <div class="col-lg-4 nature">
+                <img src="./Images/beach2.jpeg" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+
+            <div class="col-lg-4 nature">
+                <img src="./Images/beach3.jpeg" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="col-lg-4 cars">
+            <img src="./Images/blog-1.jpg" alt="Car" style="width:100%">
+            <h4>Retro</h4>
+            <p>Lorem ipsum dolor..</p>
+        </div>
+        <div class="col-lg-4 cars">
+            <img src="./Images/blog-2.jpg" alt="Car" style="width:100%">
+            <h4>Retro</h4>
+            <p>Lorem ipsum dolor..</p>
+        </div>
+        <div class="col-lg-4 cars">
+            <img src="./Images/blog-4.jpg" alt="Car" style="width:100%">
+            <h4>Retro</h4>
+            <p>Lorem ipsum dolor..</p>
+        </div>
+        <div class="col-lg-4 people">
+            <img src="./Images/Image1.JPG" alt="Car" style="width:100%">
+            <h4>Girl</h4>
+            <p>Lorem ipsum dolor..</p>
+        </div>
+        <div class="col-lg-4 people">
+            <img src="./Images/Image2.JPG" alt="Car" style="width:100%">
+            <h4>Girl</h4>
+            <p>Lorem ipsum dolor..</p>
+        </div>
+        <div class="col-lg-4 people">
+            <img src="./Images/Image3.JPG" alt="Car" style="width:100%">
+            <h4>Girl</h4>
+            <p>Lorem ipsum dolor..</p>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<!-- <div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div> -->
+
+  <!-- <div class="column people">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+</div> -->
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
